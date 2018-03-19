@@ -7,17 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD024182205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD024181205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift */; };
+		DD2541AC205EC03E00A14FF4 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541AB205EC03E00A14FF4 /* CustomNavigationController.swift */; };
+		DD2541AE205EC06D00A14FF4 /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541AD205EC06D00A14FF4 /* UIColor+theme.swift */; };
+		DD2541B0205EC0B500A14FF4 /* TrainingsController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541AF205EC0B500A14FF4 /* TrainingsController+UITableView.swift */; };
+		DD2541B6205EC16700A14FF4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD2541B4205EC16700A14FF4 /* Model.xcdatamodeld */; };
+		DD2541B8205EC1C600A14FF4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541B7205EC1C600A14FF4 /* CoreDataManager.swift */; };
+		DD2541BA205EC2FC00A14FF4 /* TrainingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541B9205EC2FC00A14FF4 /* TrainingCell.swift */; };
+		DD2541BD205EC38F00A14FF4 /* CreateTrainingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541BC205EC38F00A14FF4 /* CreateTrainingController.swift */; };
+		DD2541BF205EC45400A14FF4 /* CreateTrainingController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541BE205EC45400A14FF4 /* CreateTrainingController+UI.swift */; };
 		DDB347F8205E84A400C436C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB347F7205E84A400C436C1 /* AppDelegate.swift */; };
-		DDB347FA205E84A400C436C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB347F9205E84A400C436C1 /* ViewController.swift */; };
+		DDB347FA205E84A400C436C1 /* TrainingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB347F9205E84A400C436C1 /* TrainingsController.swift */; };
 		DDB347FD205E84A400C436C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB347FB205E84A400C436C1 /* Main.storyboard */; };
 		DDB347FF205E84A400C436C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB347FE205E84A400C436C1 /* Assets.xcassets */; };
 		DDB34802205E84A400C436C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB34800205E84A400C436C1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD024181205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingController+CreateTrainingControllerDelegate.swift"; sourceTree = "<group>"; };
+		DD2541AB205EC03E00A14FF4 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		DD2541AD205EC06D00A14FF4 /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
+		DD2541AF205EC0B500A14FF4 /* TrainingsController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingsController+UITableView.swift"; sourceTree = "<group>"; };
+		DD2541B5205EC16700A14FF4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DD2541B7205EC1C600A14FF4 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		DD2541B9205EC2FC00A14FF4 /* TrainingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCell.swift; sourceTree = "<group>"; };
+		DD2541BC205EC38F00A14FF4 /* CreateTrainingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTrainingController.swift; sourceTree = "<group>"; };
+		DD2541BE205EC45400A14FF4 /* CreateTrainingController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateTrainingController+UI.swift"; sourceTree = "<group>"; };
 		DDB347F4205E84A400C436C1 /* myappv1testagain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myappv1testagain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB347F7205E84A400C436C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDB347F9205E84A400C436C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDB347F9205E84A400C436C1 /* TrainingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingsController.swift; sourceTree = "<group>"; };
 		DDB347FC205E84A400C436C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDB347FE205E84A400C436C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDB34801205E84A400C436C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +53,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD2541A9205EC01800A14FF4 /* Trainings */ = {
+			isa = PBXGroup;
+			children = (
+				DDB347F9205E84A400C436C1 /* TrainingsController.swift */,
+				DD024181205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift */,
+				DD2541AF205EC0B500A14FF4 /* TrainingsController+UITableView.swift */,
+				DD2541B9205EC2FC00A14FF4 /* TrainingCell.swift */,
+				DD2541BB205EC37E00A14FF4 /* CreateTraining */,
+			);
+			path = Trainings;
+			sourceTree = "<group>";
+		};
+		DD2541AA205EC02400A14FF4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DD2541AB205EC03E00A14FF4 /* CustomNavigationController.swift */,
+				DD2541AD205EC06D00A14FF4 /* UIColor+theme.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DD2541BB205EC37E00A14FF4 /* CreateTraining */ = {
+			isa = PBXGroup;
+			children = (
+				DD2541BC205EC38F00A14FF4 /* CreateTrainingController.swift */,
+				DD2541BE205EC45400A14FF4 /* CreateTrainingController+UI.swift */,
+			);
+			path = CreateTraining;
+			sourceTree = "<group>";
+		};
 		DDB347EB205E84A400C436C1 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +102,15 @@
 		DDB347F6205E84A400C436C1 /* myappv1testagain */ = {
 			isa = PBXGroup;
 			children = (
+				DD2541AA205EC02400A14FF4 /* Helpers */,
+				DD2541A9205EC01800A14FF4 /* Trainings */,
 				DDB347F7205E84A400C436C1 /* AppDelegate.swift */,
-				DDB347F9205E84A400C436C1 /* ViewController.swift */,
 				DDB347FB205E84A400C436C1 /* Main.storyboard */,
 				DDB347FE205E84A400C436C1 /* Assets.xcassets */,
 				DDB34800205E84A400C436C1 /* LaunchScreen.storyboard */,
 				DDB34803205E84A400C436C1 /* Info.plist */,
+				DD2541B4205EC16700A14FF4 /* Model.xcdatamodeld */,
+				DD2541B7205EC1C600A14FF4 /* CoreDataManager.swift */,
 			);
 			path = myappv1testagain;
 			sourceTree = "<group>";
@@ -136,8 +187,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB347FA205E84A400C436C1 /* ViewController.swift in Sources */,
+				DD2541BD205EC38F00A14FF4 /* CreateTrainingController.swift in Sources */,
+				DD2541BF205EC45400A14FF4 /* CreateTrainingController+UI.swift in Sources */,
+				DD2541AC205EC03E00A14FF4 /* CustomNavigationController.swift in Sources */,
+				DD2541BA205EC2FC00A14FF4 /* TrainingCell.swift in Sources */,
+				DD024182205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift in Sources */,
+				DD2541AE205EC06D00A14FF4 /* UIColor+theme.swift in Sources */,
+				DDB347FA205E84A400C436C1 /* TrainingsController.swift in Sources */,
+				DD2541B0205EC0B500A14FF4 /* TrainingsController+UITableView.swift in Sources */,
 				DDB347F8205E84A400C436C1 /* AppDelegate.swift in Sources */,
+				DD2541B8205EC1C600A14FF4 /* CoreDataManager.swift in Sources */,
+				DD2541B6205EC16700A14FF4 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD2541B4205EC16700A14FF4 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD2541B5205EC16700A14FF4 /* Model.xcdatamodel */,
+			);
+			currentVersion = DD2541B5205EC16700A14FF4 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DDB347EC205E84A400C436C1 /* Project object */;
 }
