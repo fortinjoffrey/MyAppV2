@@ -31,9 +31,9 @@ class ExercicesController: UITableViewController, CreateExerciceControllerDelega
         
         guard let trainingExercices = training?.exercices?.allObjects as? [Exercice] else { return }
         
-        trainingExercices.forEach { print($0.name ?? "") }
+        let sortedTrainingExercices = trainingExercices.sorted(by: { $0.date! < $1.date!  })
         
-        self.exercices = trainingExercices
+        self.exercices = sortedTrainingExercices
         
     }
     

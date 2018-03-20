@@ -27,8 +27,7 @@ extension ExercicesController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellExerciceId, for: indexPath)
         let exerciceName = exercices[indexPath.row].name
-        let exerciceNumber = exercices[indexPath.row].number
-        cell.textLabel?.text = "\(exerciceName ?? "") ||   \(exerciceNumber)"
+        cell.textLabel?.text = "\(exerciceName ?? "")"
         return cell
     }
     

@@ -72,6 +72,7 @@ class CoreDataManager {
         let exercice = NSEntityDescription.insertNewObject(forEntityName: "Exercice", into: context) as! Exercice
         
         exercice.name = exerciceName
+        exercice.date = Date()
         exercice.training = training
         
         do {
