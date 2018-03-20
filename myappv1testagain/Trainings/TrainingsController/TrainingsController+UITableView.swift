@@ -18,6 +18,13 @@ extension TrainingsController {
         tableView.tableFooterView = UIView()
     }
     
+    // MARK: Did Select Row At
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let exercicesController = ExercicesController()
+        exercicesController.training = trainings[indexPath.row]
+        navigationController?.pushViewController(exercicesController, animated: true)
+    }
+    
     // MARK: Number of rows
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return trainings.count
@@ -32,10 +39,12 @@ extension TrainingsController {
         return cell
     }
     
+    // MARK: Height for row at
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 75
     }
     
+    // MARK: Edit Actions
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
         let deleteAction = UITableViewRowAction(style: .destructive, title: "Supprimer", handler: deleteActionHandler)
@@ -47,23 +56,18 @@ extension TrainingsController {
         return [deleteAction, editAction]
         
     }
-    
+    // MARK: Delete Handler
     @objc private func deleteActionHandler(action: UITableViewRowAction, indexPath: IndexPath) {
         
         let trainingToDelete = trainings[indexPath.row]
-        trainings.remove(at: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .left)
-        
-        let context = CoreDataManager.shared.persistentContainer.viewContext
-        context.delete(trainingToDelete)
-        
-        do {
-            try context.save()
-        } catch let saveErr {
-            print("Failed to save deletion:", saveErr)
+                
+        if CoreDataManager.shared.deleteTraining(training: trainingToDelete) {
+            trainings.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .left)
         }
+        
     }
-    
+    // MARK: Edit Handler
     @objc private func editActionHandler(action: UITableViewRowAction, indexPath: IndexPath) {
         
         let editTrainingController = CreateTrainingController()

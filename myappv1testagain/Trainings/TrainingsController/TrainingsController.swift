@@ -21,7 +21,7 @@ class TrainingsController: UITableViewController, CreateTrainingControllerDelega
         setupTableView()
         
         navigationItem.title = "Trainings"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "plus"), style: .plain, target: self, action: #selector(handleAdd))
+        setupPlusButtonInNavBar(selector: #selector(handleAdd))
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Tout effacer", style: .plain, target: self, action: #selector(handleReset))
         
         trainings = CoreDataManager.shared.fetchTrainings()

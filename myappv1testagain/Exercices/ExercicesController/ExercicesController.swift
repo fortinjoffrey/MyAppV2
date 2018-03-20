@@ -1,0 +1,49 @@
+//
+//  ExercicesController.swift
+//  myappv1testagain
+//
+//  Created by Joffrey Fortin on 19/03/2018.
+//  Copyright © 2018 myCode. All rights reserved.
+//
+
+import UIKit
+
+class ExercicesController: UITableViewController, CreateExerciceControllerDelegate {     
+    
+    var training: Training?
+    var exercices = [Exercice]()
+    let cellExerciceId = "cellExerciceId"
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationItem.title = training?.name        
+        
+        setupPlusButtonInNavBar(selector: #selector(handleAdd))
+        
+        setupTableView()
+        
+//        exercices = CoreDataManager.shared.fetchExercices()
+        fetchExercices()
+    }
+    
+    private func fetchExercices() {
+        
+        guard let trainingExercices = training?.exercices?.allObjects as? [Exercice] else { return }
+        
+        trainingExercices.forEach { print($0.name ?? "") }
+        
+        self.exercices = trainingExercices
+        
+    }
+    
+    @objc private func handleAdd() {
+        
+        let createExerciceController = CreateExerciceController()
+        createExerciceController.delegate = self
+        createExerciceController.training = training
+        let navController = CustomNavigationController(rootViewController: createExerciceController)
+        present(navController, animated: true, completion: nil)
+        
+    }
+}

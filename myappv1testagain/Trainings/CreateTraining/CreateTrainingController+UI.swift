@@ -12,17 +12,9 @@ extension CreateTrainingController {
     
     func setupUIElements() {
         
-        let backgroundView = UIView()
-        backgroundView.backgroundColor = .lightBlue
-        backgroundView.translatesAutoresizingMaskIntoConstraints = false
+        _ = setupLightBlueBackgroundView(height: 280)
         
-        [backgroundView, nameTextField, startDateLabel, startDatePicker, endDateLabel, endDatePicker].forEach { view.addSubview($0) }
-        
-        // MARK: Background Constraints
-        backgroundView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        backgroundView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        backgroundView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        backgroundView.heightAnchor.constraint(equalToConstant: 280).isActive = true
+        [nameTextField, startDateLabel, startDatePicker, endDateLabel, endDatePicker].forEach { view.addSubview($0) }
         
         // MARK: TextField Constraints
         nameTextField.topAnchor.constraint(equalTo: view.topAnchor).isActive = true

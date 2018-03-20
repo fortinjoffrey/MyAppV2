@@ -65,7 +65,7 @@ class CreateTrainingController: UIViewController {
         
         view.backgroundColor = .darkBlue
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(handleCancel))
+        setupCancelButtonInNavBar()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(handleSave))
         
         setupUIElements()
@@ -76,12 +76,6 @@ class CreateTrainingController: UIViewController {
         if training != nil {
             preFetchFields()
         }
-        
-    }
-    
-    @objc private func handleCancel() {
-        
-        dismiss(animated: true, completion: nil)
         
     }
     

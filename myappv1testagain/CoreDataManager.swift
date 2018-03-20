@@ -38,6 +38,20 @@ class CoreDataManager {
         }
     }
     
+    func deleteTraining(training: Training) -> Bool {
+        
+        let context = persistentContainer.viewContext
+        context.delete(training)
+        
+        do {
+            try context.save()
+            return true
+        } catch let saveErr {
+            print("Failed to save deletion:", saveErr)
+            return false
+        }        
+    }
+    
     func executeBatchDeleteRequest() -> Bool {
         
         let context = persistentContainer.viewContext
@@ -49,7 +63,38 @@ class CoreDataManager {
             print("Failed to delete objects:", deleteErr)
             return false
         }
+    }
+    
+    func createExercice(exerciceName: String, training: Training) -> (Exercice?, Error?) {
         
+        let context = persistentContainer.viewContext
+        
+        let exercice = NSEntityDescription.insertNewObject(forEntityName: "Exercice", into: context) as! Exercice
+        
+        exercice.name = exerciceName
+        exercice.training = training
+        
+        do {
+            try context.save()
+            return (exercice, nil)
+        } catch let saveErr {
+            print("Failed to create exercice:", saveErr)
+            return (nil, saveErr)
+        }
+    }
+    
+    func deleteExercice(exercice: Exercice) -> Bool {
+        
+        let context = persistentContainer.viewContext
+        context.delete(exercice)
+        
+        do {
+            try context.save()
+            return true
+        } catch let saveErr {
+            print("Failed to save deletion:", saveErr)
+            return false
+        }
     }
     
 }
