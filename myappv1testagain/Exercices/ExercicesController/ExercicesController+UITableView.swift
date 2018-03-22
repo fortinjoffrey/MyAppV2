@@ -39,20 +39,35 @@ extension ExercicesController {
     
     // Did select row at
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let exercice = exercices[indexPath.row]
-        if CoreDataManager.shared.changeExerciceIsDoneState(exercice: exercice) {
-            tableView.reloadRows(at: [indexPath], with: .fade)
-            displayCheckmarks(exercice: exercice, indexPath: indexPath)
-        }
+
+//        let exercice = exercices[indexPath.row]
+
     }
     
     private func displayCheckmarks(exercice: Exercice, indexPath: IndexPath) {
         if exercice.isDone {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            tableView.cellForRow(at: indexPath)?.textLabel?.textColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
         } else {
             tableView.cellForRow(at: indexPath)?.accessoryType = .none
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let doneContextalAction = UIContextualAction(style: .normal, title: "Terminer") { (action, view, success) in
+            let exercice = self.exercices[indexPath.row]
+            if CoreDataManager.shared.changeExerciceIsDoneState(exercice: exercice) {
+                tableView.reloadRows(at: [indexPath], with: .fade)
+                self.displayCheckmarks(exercice: exercice, indexPath: indexPath)
+                success(true)
+            }
+        }
+        doneContextalAction.backgroundColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
+        
+        let leadingConfiguration = UISwipeActionsConfiguration(actions: [doneContextalAction])
+        leadingConfiguration.performsFirstActionWithFullSwipe = true
+        return leadingConfiguration
     }
     
     // MARK: Edit Actions
@@ -60,14 +75,10 @@ extension ExercicesController {
         
         let deleteAction = UITableViewRowAction(style: .destructive, title: "Supprimer", handler: deleteActionHandler)
         deleteAction.backgroundColor = .lightRed
-        // performsFirstActionWithFullSwipe = false
         
         let editAction = UITableViewRowAction(style: .default, title: "Modifier", handler: editActionHandler)
         editAction.backgroundColor = .darkBlue
         
-        //        let doneAction = UITableViewRowAction(style: .normal, title: "Terminer", handler: doneActionHandler)
-        //        doneAction.backgroundColor = .green
-        //
         return [deleteAction, editAction]
         
     }

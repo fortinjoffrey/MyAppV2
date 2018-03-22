@@ -39,11 +39,17 @@ class ExercicesController: UITableViewController, CreateExerciceControllerDelega
     
     @objc private func handleAdd() {
         
-        let createExerciceController = CreateExerciceController()
-        createExerciceController.delegate = self
-        createExerciceController.training = training
-        let navController = CustomNavigationController(rootViewController: createExerciceController)
+//        let createExerciceController = CreateExerciceController()
+//        createExerciceController.delegate = self
+//        createExerciceController.training = training
+//        let navController = CustomNavigationController(rootViewController: createExerciceController)
+//        present(navController, animated: true, completion: nil)
+        
+        let chooseExercicesController = ChooseExercicesController()
+        chooseExercicesController.training = self.training
+        let navController = CustomNavigationController(rootViewController: chooseExercicesController)
         present(navController, animated: true, completion: nil)
+        
         
     }
 }
