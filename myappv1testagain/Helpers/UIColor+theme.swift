@@ -18,4 +18,6 @@ extension UIColor {
     
     static let lightBlue = UIColor(red: 218/255, green: 235/255, blue: 243/255, alpha: 1)
     
+    static let checkmarkImageColor = UIColor(red: 107/255, green: 189/255, blue: 73/255, alpha: 1)
+    
 }

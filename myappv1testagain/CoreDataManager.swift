@@ -73,6 +73,7 @@ class CoreDataManager {
         
         exercice.name = exerciceName
         exercice.date = Date()
+        exercice.isDone = false
         exercice.training = training
         
         do {
@@ -98,4 +99,17 @@ class CoreDataManager {
         }
     }
     
+    func changeExerciceIsDoneState(exercice: Exercice) -> Bool {
+        
+        let context = persistentContainer.viewContext
+        exercice.isDone = !exercice.isDone
+        
+        do {
+            try context.save()
+            return true
+        } catch let saveErr {
+            print("Failed to change boolean state", saveErr)
+            return false
+        }
+    }
 }

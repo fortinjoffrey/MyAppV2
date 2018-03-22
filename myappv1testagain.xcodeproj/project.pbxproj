@@ -16,6 +16,7 @@
 		DD2541BA205EC2FC00A14FF4 /* TrainingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541B9205EC2FC00A14FF4 /* TrainingCell.swift */; };
 		DD2541BD205EC38F00A14FF4 /* CreateTrainingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541BC205EC38F00A14FF4 /* CreateTrainingController.swift */; };
 		DD2541BF205EC45400A14FF4 /* CreateTrainingController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541BE205EC45400A14FF4 /* CreateTrainingController+UI.swift */; };
+		DD7F58992063DFDE00E44315 /* ChooseExercicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7F58982063DFDE00E44315 /* ChooseExercicesController.swift */; };
 		DDA4BAA3206014290003E835 /* ExercicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4BAA2206014290003E835 /* ExercicesController.swift */; };
 		DDA4BAA5206017B50003E835 /* UIViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4BAA4206017B50003E835 /* UIViewController+Helpers.swift */; };
 		DDA4BAAB20601CF70003E835 /* CreateExerciceController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4BAAA20601CF70003E835 /* CreateExerciceController+UI.swift */; };
@@ -40,6 +41,7 @@
 		DD2541B9205EC2FC00A14FF4 /* TrainingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCell.swift; sourceTree = "<group>"; };
 		DD2541BC205EC38F00A14FF4 /* CreateTrainingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTrainingController.swift; sourceTree = "<group>"; };
 		DD2541BE205EC45400A14FF4 /* CreateTrainingController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateTrainingController+UI.swift"; sourceTree = "<group>"; };
+		DD7F58982063DFDE00E44315 /* ChooseExercicesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExercicesController.swift; sourceTree = "<group>"; };
 		DDA4BAA2206014290003E835 /* ExercicesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercicesController.swift; sourceTree = "<group>"; };
 		DDA4BAA4206017B50003E835 /* UIViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helpers.swift"; sourceTree = "<group>"; };
 		DDA4BAAA20601CF70003E835 /* CreateExerciceController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateExerciceController+UI.swift"; sourceTree = "<group>"; };
@@ -96,9 +98,18 @@
 			path = CreateTraining;
 			sourceTree = "<group>";
 		};
+		DD7F589A2063DFE800E44315 /* ChooseExercices */ = {
+			isa = PBXGroup;
+			children = (
+				DD7F58982063DFDE00E44315 /* ChooseExercicesController.swift */,
+			);
+			path = ChooseExercices;
+			sourceTree = "<group>";
+		};
 		DDA4BAA1206014090003E835 /* Exercices */ = {
 			isa = PBXGroup;
 			children = (
+				DD7F589A2063DFE800E44315 /* ChooseExercices */,
 				DDDD5AD6206111F10080FC37 /* ExercicesController */,
 				DDDD5AD9206127CA0080FC37 /* ExerciceCell.swift */,
 				DDA4BAA6206018B50003E835 /* CreateExercice */,
@@ -247,6 +258,7 @@
 				DD2541BA205EC2FC00A14FF4 /* TrainingCell.swift in Sources */,
 				DDDD5ADA206127CA0080FC37 /* ExerciceCell.swift in Sources */,
 				DD024182205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift in Sources */,
+				DD7F58992063DFDE00E44315 /* ChooseExercicesController.swift in Sources */,
 				DD2541AE205EC06D00A14FF4 /* UIColor+theme.swift in Sources */,
 				DDB347FA205E84A400C436C1 /* TrainingsController.swift in Sources */,
 				DDA4BAA3206014290003E835 /* ExercicesController.swift in Sources */,
@@ -395,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QD5843FU5C;
 				INFOPLIST_FILE = myappv1testagain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fortinjoffrey.myappv1testagain;
@@ -409,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QD5843FU5C;
 				INFOPLIST_FILE = myappv1testagain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fortinjoffrey.myappv1testagain;

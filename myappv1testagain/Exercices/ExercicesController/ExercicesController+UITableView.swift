@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 extension ExercicesController {
     
@@ -22,13 +23,36 @@ extension ExercicesController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return exercices.count
     }
-
+    
     // MARK: Cell For Row At
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellExerciceId, for: indexPath)
-        let exerciceName = exercices[indexPath.row].name
-        cell.textLabel?.text = "\(exerciceName ?? "")"
+        let exercice = exercices[indexPath.row]
+
+        if exercice.isDone {
+            cell.accessoryType = .checkmark
+        }
+        
+        cell.textLabel?.text = "\(exercice.name ?? "")"
         return cell
+    }
+    
+    // Did select row at
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let exercice = exercices[indexPath.row]
+        if CoreDataManager.shared.changeExerciceIsDoneState(exercice: exercice) {
+            tableView.reloadRows(at: [indexPath], with: .fade)
+            displayCheckmarks(exercice: exercice, indexPath: indexPath)
+        }
+    }
+    
+    private func displayCheckmarks(exercice: Exercice, indexPath: IndexPath) {
+        if exercice.isDone {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        } else {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+        }
     }
     
     // MARK: Edit Actions
@@ -36,10 +60,14 @@ extension ExercicesController {
         
         let deleteAction = UITableViewRowAction(style: .destructive, title: "Supprimer", handler: deleteActionHandler)
         deleteAction.backgroundColor = .lightRed
+        // performsFirstActionWithFullSwipe = false
         
         let editAction = UITableViewRowAction(style: .default, title: "Modifier", handler: editActionHandler)
         editAction.backgroundColor = .darkBlue
         
+        //        let doneAction = UITableViewRowAction(style: .normal, title: "Terminer", handler: doneActionHandler)
+        //        doneAction.backgroundColor = .green
+        //
         return [deleteAction, editAction]
         
     }
@@ -66,6 +94,7 @@ extension ExercicesController {
         
         
     }
+
     
     // MARK: Header View
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
