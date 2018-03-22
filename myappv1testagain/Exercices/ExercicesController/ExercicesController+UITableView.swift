@@ -31,6 +31,7 @@ extension ExercicesController {
 
         if exercice.isDone {
             cell.accessoryType = .checkmark
+            cell.textLabel?.textColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
         }
         
         cell.textLabel?.text = "\(exercice.name ?? "")"
@@ -44,14 +45,7 @@ extension ExercicesController {
 
     }
     
-    private func displayCheckmarks(exercice: Exercice, indexPath: IndexPath) {
-        if exercice.isDone {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-            tableView.cellForRow(at: indexPath)?.textLabel?.textColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
-        } else {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .none
-        }
-    }
+
     
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
@@ -59,7 +53,7 @@ extension ExercicesController {
             let exercice = self.exercices[indexPath.row]
             if CoreDataManager.shared.changeExerciceIsDoneState(exercice: exercice) {
                 tableView.reloadRows(at: [indexPath], with: .fade)
-                self.displayCheckmarks(exercice: exercice, indexPath: indexPath)
+                self.displayCheckmarksForFinishedExercice(exercice: exercice, indexPath: indexPath)
                 success(true)
             }
         }

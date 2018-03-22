@@ -29,6 +29,7 @@
 		DDB347FF205E84A400C436C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB347FE205E84A400C436C1 /* Assets.xcassets */; };
 		DDB34802205E84A400C436C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB34800205E84A400C436C1 /* LaunchScreen.storyboard */; };
 		DDC322FA2063EE5400BE3204 /* ExerciceDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC322F92063EE5400BE3204 /* ExerciceDefault.swift */; };
+		DDC322FC2063F7AD00BE3204 /* UITableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC322FB2063F7AD00BE3204 /* UITableView+Helpers.swift */; };
 		DDDD5AD4206111CF0080FC37 /* ExercicesController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5AD3206111CF0080FC37 /* ExercicesController+UITableView.swift */; };
 		DDDD5AD8206114820080FC37 /* ExercicesController+CreateExerciceControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5AD7206114820080FC37 /* ExercicesController+CreateExerciceControllerDelegate.swift */; };
 		DDDD5ADA206127CA0080FC37 /* ExerciceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5AD9206127CA0080FC37 /* ExerciceCell.swift */; };
@@ -59,6 +60,7 @@
 		DDB34801205E84A400C436C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDB34803205E84A400C436C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC322F92063EE5400BE3204 /* ExerciceDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceDefault.swift; sourceTree = "<group>"; };
+		DDC322FB2063F7AD00BE3204 /* UITableView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Helpers.swift"; sourceTree = "<group>"; };
 		DDDD5AD3206111CF0080FC37 /* ExercicesController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExercicesController+UITableView.swift"; sourceTree = "<group>"; };
 		DDDD5AD7206114820080FC37 /* ExercicesController+CreateExerciceControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExercicesController+CreateExerciceControllerDelegate.swift"; sourceTree = "<group>"; };
 		DDDD5AD9206127CA0080FC37 /* ExerciceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceCell.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				DD2541AB205EC03E00A14FF4 /* CustomNavigationController.swift */,
 				DD2541AD205EC06D00A14FF4 /* UIColor+theme.swift */,
 				DDA4BAA4206017B50003E835 /* UIViewController+Helpers.swift */,
+				DDC322FB2063F7AD00BE3204 /* UITableView+Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				DD7F589C2063E87F00E44315 /* ChooseExercicesController+UITableView.swift in Sources */,
 				DD024182205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift in Sources */,
 				DDC322FA2063EE5400BE3204 /* ExerciceDefault.swift in Sources */,
+				DDC322FC2063F7AD00BE3204 /* UITableView+Helpers.swift in Sources */,
 				DD7F58992063DFDE00E44315 /* ChooseExercicesController.swift in Sources */,
 				DD2541AE205EC06D00A14FF4 /* UIColor+theme.swift in Sources */,
 				DDB347FA205E84A400C436C1 /* TrainingsController.swift in Sources */,

@@ -23,6 +23,8 @@ extension ChooseExercicesController {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        
 
         filteredExercices = defaultExercices.filter({
             return $0.name.lowercased().contains(searchText.lowercased()) || searchText.isEmpty
@@ -31,5 +33,11 @@ extension ChooseExercicesController {
 
     }
     
+    override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.view.endEditing(true)
+    }
     
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.view.endEditing(true)
+    }
 }

@@ -18,7 +18,7 @@ extension UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(handleCancel))
     }
     
-    @objc private func handleCancel() {
+    @objc func handleCancel() {
         dismiss(animated: true, completion: nil)
     }
     
@@ -37,5 +37,17 @@ extension UIViewController {
         
         return backgroundView
     }
+    
+    func showAlertForHavingSelectedExercice(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        present(alert, animated: true, completion: nil)
+        
+        let when = DispatchTime.now() + 0.5
+        DispatchQueue.main.asyncAfter(deadline: when){
+            alert.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     
 }

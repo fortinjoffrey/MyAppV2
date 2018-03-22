@@ -47,6 +47,7 @@ class ExercicesController: UITableViewController, CreateExerciceControllerDelega
         
         let chooseExercicesController = ChooseExercicesController()
         chooseExercicesController.training = self.training
+        chooseExercicesController.delegate = self
         let navController = CustomNavigationController(rootViewController: chooseExercicesController)
         present(navController, animated: true, completion: nil)
         
