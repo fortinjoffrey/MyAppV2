@@ -38,11 +38,12 @@ extension ExercicesController {
         return cell
     }
     
-    // Did select row at
+    // MARK: Did Select Row At
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-//        let exercice = exercices[indexPath.row]
-
+        let setsController = SetsController()
+        setsController.exercice = exercices[indexPath.row]
+        navigationController?.pushViewController(setsController, animated: true)
     }
     
 

@@ -4,7 +4,15 @@
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="isDone" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Set" inverseName="exercice" inverseEntity="Set" syncable="YES"/>
         <relationship name="training" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Training" inverseName="exercices" inverseEntity="Training" syncable="YES"/>
+    </entity>
+    <entity name="Set" representedClassName="Set" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rep" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="exercice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercice" inverseName="sets" inverseEntity="Exercice" syncable="YES"/>
     </entity>
     <entity name="Training" representedClassName="Training" syncable="YES" codeGenerationType="class">
         <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -13,7 +21,8 @@
         <relationship name="exercices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercice" inverseName="training" inverseEntity="Exercice" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Exercice" positionX="-63" positionY="9" width="128" height="105"/>
-        <element name="Training" positionX="-297" positionY="-99" width="128" height="105"/>
+        <element name="Exercice" positionX="70" positionY="-189" width="128" height="118"/>
+        <element name="Training" positionX="-263" positionY="-222" width="128" height="105"/>
+        <element name="Set" positionX="-180" positionY="-9" width="128" height="118"/>
     </elements>
 </model>

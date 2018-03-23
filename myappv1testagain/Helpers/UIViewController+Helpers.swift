@@ -34,7 +34,6 @@ extension UIViewController {
         backgroundView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         backgroundView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         backgroundView.heightAnchor.constraint(equalToConstant: height).isActive = true
-        
         return backgroundView
     }
     
@@ -48,6 +47,4 @@ extension UIViewController {
             alert.dismiss(animated: true, completion: nil)
         }
     }
-    
-    
 }

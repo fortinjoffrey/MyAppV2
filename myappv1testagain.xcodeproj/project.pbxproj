@@ -30,6 +30,10 @@
 		DDB34802205E84A400C436C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB34800205E84A400C436C1 /* LaunchScreen.storyboard */; };
 		DDC322FA2063EE5400BE3204 /* ExerciceDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC322F92063EE5400BE3204 /* ExerciceDefault.swift */; };
 		DDC322FC2063F7AD00BE3204 /* UITableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC322FB2063F7AD00BE3204 /* UITableView+Helpers.swift */; };
+		DDD2DB9720656A2A0078583B /* SetsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2DB9620656A2A0078583B /* SetsController.swift */; };
+		DDD2DB9920656E270078583B /* SetsController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2DB9820656E270078583B /* SetsController+UI.swift */; };
+		DDD2DB9B206571380078583B /* SetsController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2DB9A206571380078583B /* SetsController+UITableView.swift */; };
+		DDD2DB9D2065734B0078583B /* SetsController+UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2DB9C2065734B0078583B /* SetsController+UIPickerView.swift */; };
 		DDDD5AD4206111CF0080FC37 /* ExercicesController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5AD3206111CF0080FC37 /* ExercicesController+UITableView.swift */; };
 		DDDD5AD8206114820080FC37 /* ExercicesController+CreateExerciceControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5AD7206114820080FC37 /* ExercicesController+CreateExerciceControllerDelegate.swift */; };
 		DDDD5ADA206127CA0080FC37 /* ExerciceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5AD9206127CA0080FC37 /* ExerciceCell.swift */; };
@@ -61,6 +65,10 @@
 		DDB34803205E84A400C436C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC322F92063EE5400BE3204 /* ExerciceDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceDefault.swift; sourceTree = "<group>"; };
 		DDC322FB2063F7AD00BE3204 /* UITableView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Helpers.swift"; sourceTree = "<group>"; };
+		DDD2DB9620656A2A0078583B /* SetsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsController.swift; sourceTree = "<group>"; };
+		DDD2DB9820656E270078583B /* SetsController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SetsController+UI.swift"; sourceTree = "<group>"; };
+		DDD2DB9A206571380078583B /* SetsController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SetsController+UITableView.swift"; sourceTree = "<group>"; };
+		DDD2DB9C2065734B0078583B /* SetsController+UIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SetsController+UIPickerView.swift"; sourceTree = "<group>"; };
 		DDDD5AD3206111CF0080FC37 /* ExercicesController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExercicesController+UITableView.swift"; sourceTree = "<group>"; };
 		DDDD5AD7206114820080FC37 /* ExercicesController+CreateExerciceControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExercicesController+CreateExerciceControllerDelegate.swift"; sourceTree = "<group>"; };
 		DDDD5AD9206127CA0080FC37 /* ExerciceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceCell.swift; sourceTree = "<group>"; };
@@ -160,6 +168,7 @@
 				DD2541AA205EC02400A14FF4 /* Helpers */,
 				DD2541A9205EC01800A14FF4 /* Trainings */,
 				DDA4BAA1206014090003E835 /* Exercices */,
+				DDD2DB94206569E20078583B /* Sets */,
 				DDB347F7205E84A400C436C1 /* AppDelegate.swift */,
 				DDB347FB205E84A400C436C1 /* Main.storyboard */,
 				DDB347FE205E84A400C436C1 /* Assets.xcassets */,
@@ -169,6 +178,25 @@
 				DD2541B7205EC1C600A14FF4 /* CoreDataManager.swift */,
 			);
 			path = myappv1testagain;
+			sourceTree = "<group>";
+		};
+		DDD2DB94206569E20078583B /* Sets */ = {
+			isa = PBXGroup;
+			children = (
+				DDD2DB9520656A140078583B /* SetsController */,
+			);
+			path = Sets;
+			sourceTree = "<group>";
+		};
+		DDD2DB9520656A140078583B /* SetsController */ = {
+			isa = PBXGroup;
+			children = (
+				DDD2DB9620656A2A0078583B /* SetsController.swift */,
+				DDD2DB9820656E270078583B /* SetsController+UI.swift */,
+				DDD2DB9A206571380078583B /* SetsController+UITableView.swift */,
+				DDD2DB9C2065734B0078583B /* SetsController+UIPickerView.swift */,
+			);
+			path = SetsController;
 			sourceTree = "<group>";
 		};
 		DDDD5AD5206111DA0080FC37 /* TrainingsController */ = {
@@ -273,6 +301,7 @@
 				DD024182205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift in Sources */,
 				DDC322FA2063EE5400BE3204 /* ExerciceDefault.swift in Sources */,
 				DDC322FC2063F7AD00BE3204 /* UITableView+Helpers.swift in Sources */,
+				DDD2DB9720656A2A0078583B /* SetsController.swift in Sources */,
 				DD7F58992063DFDE00E44315 /* ChooseExercicesController.swift in Sources */,
 				DD2541AE205EC06D00A14FF4 /* UIColor+theme.swift in Sources */,
 				DDB347FA205E84A400C436C1 /* TrainingsController.swift in Sources */,
@@ -280,11 +309,14 @@
 				DDA4BAAB20601CF70003E835 /* CreateExerciceController+UI.swift in Sources */,
 				DDDD5AD8206114820080FC37 /* ExercicesController+CreateExerciceControllerDelegate.swift in Sources */,
 				DD7F589E2063EA4300E44315 /* ChooseExercicesController+UISearchBar.swift in Sources */,
+				DDD2DB9920656E270078583B /* SetsController+UI.swift in Sources */,
 				DD2541B0205EC0B500A14FF4 /* TrainingsController+UITableView.swift in Sources */,
 				DDDD5AD4206111CF0080FC37 /* ExercicesController+UITableView.swift in Sources */,
 				DDB347F8205E84A400C436C1 /* AppDelegate.swift in Sources */,
 				DD2541B8205EC1C600A14FF4 /* CoreDataManager.swift in Sources */,
 				DD2541B6205EC16700A14FF4 /* Model.xcdatamodeld in Sources */,
+				DDD2DB9B206571380078583B /* SetsController+UITableView.swift in Sources */,
+				DDD2DB9D2065734B0078583B /* SetsController+UIPickerView.swift in Sources */,
 				DDA4BAA5206017B50003E835 /* UIViewController+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,21 +16,13 @@ extension ChooseExercicesController {
         exercicesSearchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: searchBarHeight))
         exercicesSearchBar?.delegate = self
         exercicesSearchBar?.placeholder = "Nom de l'exercice"
-//        exercicesSearchBar?.scopeButtonTitles = ["Tous", "Récent"]
-//        exercicesSearchBar?.showsScopeBar = true
-//        exercicesSearchBar?.scopeBarBackgroundImage = UIImage()
-        
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        
-
         filteredExercices = defaultExercices.filter({
             return $0.name.lowercased().contains(searchText.lowercased()) || searchText.isEmpty
         })
         tableView.reloadData()
-
     }
     
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
@@ -40,4 +32,5 @@ extension ChooseExercicesController {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.view.endEditing(true)
     }
+
 }

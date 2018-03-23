@@ -17,13 +17,11 @@ class ExercicesController: UITableViewController, CreateExerciceControllerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = training?.name        
-        
+        navigationItem.title = training?.name
         setupPlusButtonInNavBar(selector: #selector(handleAdd))
         
         setupTableView()
         
-//        exercices = CoreDataManager.shared.fetchExercices()
         fetchExercices()
     }
     
@@ -50,7 +48,5 @@ class ExercicesController: UITableViewController, CreateExerciceControllerDelega
         chooseExercicesController.delegate = self
         let navController = CustomNavigationController(rootViewController: chooseExercicesController)
         present(navController, animated: true, completion: nil)
-        
-        
     }
 }
