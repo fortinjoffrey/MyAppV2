@@ -86,10 +86,7 @@ class SetsController: UIViewController, UITableViewDelegate, UITableViewDataSour
     private func fetchSets() {
         
         guard let exerciceSets = exercice?.sets?.allObjects as? [Set] else { return }
-        
         let sortedExerciceSets = exerciceSets.sorted(by: { $0.date! < $1.date! })
-        
         self.sets = sortedExerciceSets
-        
     }
 }

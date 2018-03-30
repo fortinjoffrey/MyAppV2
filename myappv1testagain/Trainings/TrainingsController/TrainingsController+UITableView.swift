@@ -104,4 +104,24 @@ extension TrainingsController {
         return trainings.count > 0 ? 0 : 150
     }
     
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let resumeAction = UIContextualAction(style: .normal, title: "Résumé") { (action, view, success) in
+            let resumeTrainingController = ResumeTrainingController()
+            resumeTrainingController.training = self.trainings[indexPath.row]
+//            let navController = CustomNavigationController(rootViewController: resumeTrainingController)
+            self.navigationController?.pushViewController(resumeTrainingController, animated: true)
+//            self.present(navController, animated: true, completion: nil)
+            success(true)
+        }
+        resumeAction.backgroundColor = .blue
+        
+        
+        let leadingConfiguration = UISwipeActionsConfiguration(actions: [resumeAction])
+        leadingConfiguration.performsFirstActionWithFullSwipe = true
+        return leadingConfiguration
+        
+        
+    }
+    
 }
