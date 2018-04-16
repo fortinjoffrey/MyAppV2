@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         
-        let dummyController = TrainingsController()
-        let navController = CustomNavigationController(rootViewController: dummyController)
+        let mainTabBarController = MainTabBarController()
+        
+//        let navController = CustomNavigationController(rootViewController: mainTabBarController)
         
         UINavigationBar.appearance().barTintColor = .red
         UINavigationBar.appearance().tintColor = .white
@@ -30,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor:UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor:UIColor.white]
         
-        window?.rootViewController = navController
+        window?.rootViewController = mainTabBarController
         
         return true
     }

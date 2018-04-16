@@ -30,8 +30,11 @@ class CoreDataManager {
         let request = NSFetchRequest<Training>(entityName: "Training")
         
         do {
-            let trainings = try context.fetch(request)
-            return trainings
+            let trainings = try context.fetch(request)                
+
+            let sortedTrainings = trainings.sorted(by: { $0.startDate! < $1.startDate! } )
+            
+            return sortedTrainings
         } catch let fetchErr {
             print("Failed to fetch trainings from Core Data:", fetchErr)
             return []

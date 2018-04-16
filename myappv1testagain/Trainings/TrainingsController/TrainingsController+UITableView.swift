@@ -22,6 +22,7 @@ extension TrainingsController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let exercicesController = ExercicesController()
         exercicesController.training = trainings[indexPath.row]
+        exercicesController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(exercicesController, animated: true)
     }
     
@@ -109,9 +110,9 @@ extension TrainingsController {
         let resumeAction = UIContextualAction(style: .normal, title: "Résumé") { (action, view, success) in
             let resumeTrainingController = ResumeTrainingController()
             resumeTrainingController.training = self.trainings[indexPath.row]
-//            let navController = CustomNavigationController(rootViewController: resumeTrainingController)
+
+            resumeTrainingController.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(resumeTrainingController, animated: true)
-//            self.present(navController, animated: true, completion: nil)
             success(true)
         }
         resumeAction.backgroundColor = .blue

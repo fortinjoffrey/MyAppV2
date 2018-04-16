@@ -13,37 +13,21 @@ extension SetsController {
     func setupUI() {
         
         let backgroundLabelAdd = UIView()
-        backgroundLabelAdd.backgroundColor = .white
-        backgroundLabelAdd.translatesAutoresizingMaskIntoConstraints = false
+        backgroundLabelAdd.backgroundColor = .yellow
         
         let pickerHeight: CGFloat = 100
         let previewLabelHeight: CGFloat = 50
         
         [pickerRepsWeightUnit, backgroundLabelAdd, previewLabel, addButton, tableView].forEach { view.addSubview($0) }
         
-        pickerRepsWeightUnit.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        pickerRepsWeightUnit.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        pickerRepsWeightUnit.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        pickerRepsWeightUnit.heightAnchor.constraint(equalToConstant: pickerHeight).isActive = true
+        pickerRepsWeightUnit.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: pickerHeight)
         
-        backgroundLabelAdd.topAnchor.constraint(equalTo: pickerRepsWeightUnit.bottomAnchor).isActive = true
-        backgroundLabelAdd.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        backgroundLabelAdd.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        backgroundLabelAdd.heightAnchor.constraint(equalToConstant: previewLabelHeight).isActive = true
+        backgroundLabelAdd.anchor(top: pickerRepsWeightUnit.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: previewLabelHeight)
         
-        previewLabel.centerYAnchor.constraint(equalTo: backgroundLabelAdd.centerYAnchor).isActive = true
-        previewLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
-        previewLabel.widthAnchor.constraint(equalToConstant: view.bounds.width - 100).isActive = true
+        previewLabel.anchor(top: backgroundLabelAdd.topAnchor, left: view.leftAnchor, bottom: nil, right: backgroundLabelAdd.rightAnchor, paddingTop: 0, paddingLeft: 16, paddingBottom: 0, paddingRight: 0, width: 0, height: previewLabelHeight)
         
-        addButton.centerYAnchor.constraint(equalTo: previewLabel.centerYAnchor).isActive = true
-        addButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
-        
-        tableView.topAnchor.constraint(equalTo: backgroundLabelAdd.bottomAnchor).isActive = true
-        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true        
-        
+        addButton.anchor(top: previewLabel.topAnchor, left: nil, bottom: previewLabel.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 16, width: 0, height: 0)
+
+        tableView.anchor(top: backgroundLabelAdd.bottomAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)                
     }
-    
-    
 }

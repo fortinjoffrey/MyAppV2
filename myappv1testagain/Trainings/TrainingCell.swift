@@ -39,7 +39,6 @@ class TrainingCell: UITableViewCell {
         label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 12)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -47,9 +46,9 @@ class TrainingCell: UITableViewCell {
         let label = UILabel()
         label.text = "SEPT"
         label.textColor = .white
+        label.backgroundColor = .red
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 14)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -59,7 +58,6 @@ class TrainingCell: UITableViewCell {
         label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 12)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -69,7 +67,6 @@ class TrainingCell: UITableViewCell {
         label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 12)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -79,7 +76,6 @@ class TrainingCell: UITableViewCell {
         label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 12)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -89,7 +85,6 @@ class TrainingCell: UITableViewCell {
         label.textColor = .white
         label.textAlignment = .left
         label.font = UIFont.boldSystemFont(ofSize: 16)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -109,31 +104,19 @@ class TrainingCell: UITableViewCell {
     private func setupCellUI() {
         [dayLabel, monthLabel, yearLabel, startDateLabel, endDateLabel, nameLabel].forEach { addSubview($0) }
         
- 
-        monthLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true
+        monthLabel.anchor(top: nil, left: leftAnchor, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 16, paddingBottom: 0, paddingRight: 0, width: 60, height: 20)
         monthLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        monthLabel.widthAnchor.constraint(equalToConstant: 60).isActive = true
         
+        dayLabel.anchor(top: nil, left: monthLabel.leftAnchor, bottom: monthLabel.topAnchor, right: monthLabel.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 20)
 
-        dayLabel.centerXAnchor.constraint(equalTo: monthLabel.centerXAnchor).isActive = true
-        dayLabel.bottomAnchor.constraint(equalTo: monthLabel.topAnchor).isActive = true
+        yearLabel.anchor(top: monthLabel.bottomAnchor, left: monthLabel.leftAnchor, bottom: nil, right: monthLabel.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 20)
         
-
-        yearLabel.centerXAnchor.constraint(equalTo: monthLabel.centerXAnchor).isActive = true
-        yearLabel.topAnchor.constraint(equalTo: monthLabel.bottomAnchor).isActive = true
-        
-
-        nameLabel.leftAnchor.constraint(equalTo: monthLabel.rightAnchor, constant: 16).isActive = true
+        nameLabel.anchor(top: nil, left: monthLabel.rightAnchor, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 250, height: 30)
         nameLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        nameLabel.widthAnchor.constraint(equalToConstant: 250).isActive = true
         
-        startDateLabel.leftAnchor.constraint(equalTo: nameLabel.leftAnchor).isActive = true
-        startDateLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor).isActive = true
+        startDateLabel.anchor(top: nameLabel.bottomAnchor, left: nameLabel.leftAnchor, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
         
-        endDateLabel.leftAnchor.constraint(equalTo: startDateLabel.rightAnchor, constant: 16).isActive = true
-        endDateLabel.topAnchor.constraint(equalTo: startDateLabel.topAnchor).isActive = true
-        
-        
+        endDateLabel.anchor(top: nameLabel.bottomAnchor, left: startDateLabel.rightAnchor, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 20, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
         
     }
 }

@@ -18,33 +18,20 @@ class ResumeTrainingController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .gray
-
         navigationItem.title = training?.name
-        
         setupTableView()
-        
         fetchExercices()
     }
     
     
     private func fetchExercices() {
-        
         guard let trainingExercices = training?.exercices?.allObjects as? [Exercice] else { return }
-        
         exercices = trainingExercices.sorted(by: { $0.date! < $1.date!  })
-        
         exercices.forEach { fetchSets(exercice: $0)  }
-
-        
     }
     
     private func fetchSets(exercice: Exercice) {
-        
         guard let exerciceSets = exercice.sets?.allObjects as? [Set] else { return }
         sets.append(exerciceSets)
-//        let sortedExerciceSets = exerciceSets.sorted(by: { $0.date! < $1.date! })
-   
     }
-
-    
 }

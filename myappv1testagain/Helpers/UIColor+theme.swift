@@ -10,6 +10,10 @@ import UIKit
 
 extension UIColor {
     
+    static func rgb(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
+        return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
+    }
+    
     static let lightRed = UIColor(red: 247/255, green: 66/255, blue: 66/255, alpha: 1)
     
     static let tealColor = UIColor(red: 48/255, green: 164/255, blue: 182/255, alpha: 1)

@@ -22,7 +22,6 @@ class CreateTrainingController: UIViewController {
     let nameTextField: UITextField = {
        let textField = UITextField()
         textField.placeholder = "Entrez un nom pour votre séance"
-        textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
     
@@ -31,7 +30,6 @@ class CreateTrainingController: UIViewController {
         label.text = "Entrez l'heure de début"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 16)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -39,7 +37,6 @@ class CreateTrainingController: UIViewController {
        let dp = UIDatePicker()
         dp.datePickerMode = .dateAndTime
         dp.locale = Locale(identifier: "FR_fr")
-        dp.translatesAutoresizingMaskIntoConstraints = false
         return dp
     }()
     
@@ -48,7 +45,6 @@ class CreateTrainingController: UIViewController {
         label.text = "Fin de l'entraînement"
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 16)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -56,7 +52,6 @@ class CreateTrainingController: UIViewController {
         let dp = UIDatePicker()
         dp.datePickerMode = .time
         dp.locale = Locale(identifier: "FR_fr")
-        dp.translatesAutoresizingMaskIntoConstraints = false
         return dp
     }()
     

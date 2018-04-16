@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DD024182205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD024181205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift */; };
+		DD194A8120809AB1008B54F8 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD194A8020809AB1008B54F8 /* UIView+.swift */; };
 		DD2541AC205EC03E00A14FF4 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541AB205EC03E00A14FF4 /* CustomNavigationController.swift */; };
 		DD2541AE205EC06D00A14FF4 /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541AD205EC06D00A14FF4 /* UIColor+theme.swift */; };
 		DD2541B0205EC0B500A14FF4 /* TrainingsController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541AF205EC0B500A14FF4 /* TrainingsController+UITableView.swift */; };
@@ -18,6 +19,8 @@
 		DD2541BF205EC45400A14FF4 /* CreateTrainingController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541BE205EC45400A14FF4 /* CreateTrainingController+UI.swift */; };
 		DD5F593F206E367500EBF477 /* ResumeTrainingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F593E206E367500EBF477 /* ResumeTrainingController.swift */; };
 		DD5F5941206E398000EBF477 /* ResumeTrainingController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F5940206E398000EBF477 /* ResumeTrainingController+UITableView.swift */; };
+		DD63DFA22084993000FA83E4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD63DFA12084993000FA83E4 /* MainTabBarController.swift */; };
+		DD63DFA520849CD800FA83E4 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD63DFA420849CD800FA83E4 /* TimerController.swift */; };
 		DD7F58992063DFDE00E44315 /* ChooseExercicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7F58982063DFDE00E44315 /* ChooseExercicesController.swift */; };
 		DD7F589C2063E87F00E44315 /* ChooseExercicesController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7F589B2063E87F00E44315 /* ChooseExercicesController+UITableView.swift */; };
 		DD7F589E2063EA4300E44315 /* ChooseExercicesController+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7F589D2063EA4300E44315 /* ChooseExercicesController+UISearchBar.swift */; };
@@ -43,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		DD024181205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingController+CreateTrainingControllerDelegate.swift"; sourceTree = "<group>"; };
+		DD194A8020809AB1008B54F8 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		DD2541AB205EC03E00A14FF4 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		DD2541AD205EC06D00A14FF4 /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
 		DD2541AF205EC0B500A14FF4 /* TrainingsController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrainingsController+UITableView.swift"; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		DD2541BE205EC45400A14FF4 /* CreateTrainingController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateTrainingController+UI.swift"; sourceTree = "<group>"; };
 		DD5F593E206E367500EBF477 /* ResumeTrainingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeTrainingController.swift; sourceTree = "<group>"; };
 		DD5F5940206E398000EBF477 /* ResumeTrainingController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResumeTrainingController+UITableView.swift"; sourceTree = "<group>"; };
+		DD63DFA12084993000FA83E4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DD63DFA420849CD800FA83E4 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		DD7F58982063DFDE00E44315 /* ChooseExercicesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExercicesController.swift; sourceTree = "<group>"; };
 		DD7F589B2063E87F00E44315 /* ChooseExercicesController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseExercicesController+UITableView.swift"; sourceTree = "<group>"; };
 		DD7F589D2063EA4300E44315 /* ChooseExercicesController+UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseExercicesController+UISearchBar.swift"; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 				DD2541AD205EC06D00A14FF4 /* UIColor+theme.swift */,
 				DDA4BAA4206017B50003E835 /* UIViewController+Helpers.swift */,
 				DDC322FB2063F7AD00BE3204 /* UITableView+Helpers.swift */,
+				DD194A8020809AB1008B54F8 /* UIView+.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -127,6 +134,29 @@
 				DD5F5940206E398000EBF477 /* ResumeTrainingController+UITableView.swift */,
 			);
 			path = ResumeTraining;
+			sourceTree = "<group>";
+		};
+		DD63DFA02084990E00FA83E4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DD63DFA12084993000FA83E4 /* MainTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		DD63DFA320849CC800FA83E4 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				DD63DFA420849CD800FA83E4 /* TimerController.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		DD63DFA620849E2600FA83E4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		DD7F589A2063DFE800E44315 /* ChooseExercices */ = {
@@ -179,11 +209,14 @@
 		DDB347F6205E84A400C436C1 /* myappv1testagain */ = {
 			isa = PBXGroup;
 			children = (
+				DD63DFA620849E2600FA83E4 /* Profile */,
+				DD63DFA320849CC800FA83E4 /* Timer */,
+				DDB347F7205E84A400C436C1 /* AppDelegate.swift */,
+				DD63DFA02084990E00FA83E4 /* TabBar */,
 				DD2541AA205EC02400A14FF4 /* Helpers */,
 				DD2541A9205EC01800A14FF4 /* Trainings */,
 				DDA4BAA1206014090003E835 /* Exercices */,
 				DDD2DB94206569E20078583B /* Sets */,
-				DDB347F7205E84A400C436C1 /* AppDelegate.swift */,
 				DDB347FB205E84A400C436C1 /* Main.storyboard */,
 				DDB347FE205E84A400C436C1 /* Assets.xcassets */,
 				DDB34800205E84A400C436C1 /* LaunchScreen.storyboard */,
@@ -260,7 +293,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = myCode;
 				TargetAttributes = {
 					DDB347F3205E84A400C436C1 = {
@@ -326,12 +359,15 @@
 				DD7F589E2063EA4300E44315 /* ChooseExercicesController+UISearchBar.swift in Sources */,
 				DD5F593F206E367500EBF477 /* ResumeTrainingController.swift in Sources */,
 				DDD2DB9920656E270078583B /* SetsController+UI.swift in Sources */,
+				DD63DFA520849CD800FA83E4 /* TimerController.swift in Sources */,
 				DD2541B0205EC0B500A14FF4 /* TrainingsController+UITableView.swift in Sources */,
 				DDDD5AD4206111CF0080FC37 /* ExercicesController+UITableView.swift in Sources */,
 				DDB347F8205E84A400C436C1 /* AppDelegate.swift in Sources */,
+				DD194A8120809AB1008B54F8 /* UIView+.swift in Sources */,
 				DD2541B8205EC1C600A14FF4 /* CoreDataManager.swift in Sources */,
 				DD2541B6205EC16700A14FF4 /* Model.xcdatamodeld in Sources */,
 				DDD2DB9B206571380078583B /* SetsController+UITableView.swift in Sources */,
+				DD63DFA22084993000FA83E4 /* MainTabBarController.swift in Sources */,
 				DDD2DB9D2065734B0078583B /* SetsController+UIPickerView.swift in Sources */,
 				DDA4BAA5206017B50003E835 /* UIViewController+Helpers.swift in Sources */,
 			);
@@ -373,6 +409,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -380,6 +417,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -430,6 +468,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -437,6 +476,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

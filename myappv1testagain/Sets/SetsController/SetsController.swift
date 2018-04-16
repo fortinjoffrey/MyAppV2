@@ -20,29 +20,24 @@ class SetsController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let pickerRepsWeightUnit: UIPickerView = {
         let picker = UIPickerView()
-        picker.translatesAutoresizingMaskIntoConstraints = false
         return picker
     }()
     
     let previewLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.backgroundColor = .orange
         label.text = "10 x 25 kgs"
         return label
     }()
     
     let addButton: UIButton = {
         let button = UIButton(type: UIButtonType.contactAdd)
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(handleAddSet), for: .touchUpInside)
         return button
     }()
     
     let tableView: UITableView = {
         let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
     
@@ -50,7 +45,7 @@ class SetsController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         navigationItem.title = exercice?.name
-        view.backgroundColor = .darkBlue
+        view.backgroundColor = .white
         
         setupUI()
         setupPickerData()

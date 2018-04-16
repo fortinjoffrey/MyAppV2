@@ -16,35 +16,15 @@ extension CreateTrainingController {
         
         [nameTextField, startDateLabel, startDatePicker, endDateLabel, endDatePicker].forEach { view.addSubview($0) }
         
-        // MARK: TextField Constraints
-        nameTextField.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        nameTextField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
-        nameTextField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
-        nameTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        nameTextField.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 16, paddingBottom: 0, paddingRight: 16, width: 0, height: 50)
+
+        startDateLabel.anchor(top: nameTextField.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
+
+        startDatePicker.anchor(top: startDateLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 65)
         
-        // MARK: Start Date Label Constraints
-        startDateLabel.topAnchor.constraint(equalTo: nameTextField.bottomAnchor).isActive = true
-        startDateLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        startDateLabel.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        startDateLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        endDateLabel.anchor(top: startDatePicker.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
         
-        // MARK: Start Date Picker Constraints
-        startDatePicker.topAnchor.constraint(equalTo: startDateLabel.bottomAnchor).isActive = true
-        startDatePicker.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        startDatePicker.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        startDatePicker.heightAnchor.constraint(equalToConstant: 65).isActive = true
-        
-        // MARK: End Date Label Constraints
-        endDateLabel.topAnchor.constraint(equalTo: startDatePicker.bottomAnchor).isActive = true
-        endDateLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        endDateLabel.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        endDateLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        
-        // MARK: End Date Picker Constraints
-        endDatePicker.topAnchor.constraint(equalTo: endDateLabel.bottomAnchor).isActive = true
-        endDatePicker.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        endDatePicker.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        endDatePicker.heightAnchor.constraint(equalToConstant: 65).isActive = true
+        endDatePicker.anchor(top: endDateLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 65)
     }
     
 }
