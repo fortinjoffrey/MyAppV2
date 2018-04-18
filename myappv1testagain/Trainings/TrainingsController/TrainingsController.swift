@@ -16,18 +16,16 @@ class TrainingsController: UITableViewController, CreateTrainingControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         setupTableView()
         
         navigationItem.title = "Entraînements"
         setupPlusButtonInNavBar(selector: #selector(handleAdd))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Tout effacer", style: .plain, target: self, action: #selector(handleReset))
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Tout effacer", style: .plain, target: self, action: #selector(handleReset))
         
         trainings = CoreDataManager.shared.fetchTrainings()
         
         trainings.forEach {
-            
             
             print($0.name ?? "")
             print($0.startDate ?? "")
@@ -50,7 +48,6 @@ class TrainingsController: UITableViewController, CreateTrainingControllerDelega
     }
     
     @objc private func handleReset() {
-        
         if CoreDataManager.shared.executeBatchDeleteRequest() {
             var indexPathsToRemove = [IndexPath]()
             
@@ -61,10 +58,7 @@ class TrainingsController: UITableViewController, CreateTrainingControllerDelega
             
             trainings.removeAll()
             tableView.deleteRows(at: indexPathsToRemove, with: .left)
-            
         }
-        
-        
     }
 }
 

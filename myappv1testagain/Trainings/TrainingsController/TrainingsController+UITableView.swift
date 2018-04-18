@@ -22,7 +22,7 @@ extension TrainingsController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let exercicesController = ExercicesController()
         exercicesController.training = trainings[indexPath.row]
-        exercicesController.hidesBottomBarWhenPushed = true
+        exercicesController.hidesBottomBarWhenPushed = false
         navigationController?.pushViewController(exercicesController, animated: true)
     }
     

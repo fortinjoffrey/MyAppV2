@@ -22,7 +22,7 @@ class TrainingCell: UITableViewCell {
             if let startDate = training?.startDate {
                 for(keys, value) in dateFormatDictionary {
                     dateFormater.dateFormat = value
-                    keys.text = dateFormater.string(from: startDate)
+                    keys.text = dateFormater.string(from: startDate).uppercased()
                 }
             }
             
@@ -46,7 +46,6 @@ class TrainingCell: UITableViewCell {
         let label = UILabel()
         label.text = "SEPT"
         label.textColor = .white
-        label.backgroundColor = .red
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 14)
         return label
