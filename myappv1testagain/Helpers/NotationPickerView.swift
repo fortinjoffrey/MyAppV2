@@ -10,8 +10,8 @@ import UIKit
 
 class NotationPickerView: UIPickerView {
     
-    let data = [Int16](1...10)
-    
+    let data = [Int16](0...10)
+    var selectedData: Int16 = 5
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -63,7 +63,9 @@ extension NotationPickerView: UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("\(data[row])")
+        
+        selectedData = data[row]
+        print(selectedData)
     }
 }
 

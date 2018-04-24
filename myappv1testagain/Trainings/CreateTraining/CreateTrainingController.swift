@@ -80,7 +80,7 @@ class CreateTrainingController: UIViewController {
         let pv = NotationPickerView()
         pv.dataSource = pv
         pv.delegate = pv
-        pv.selectRow(4, inComponent: 0, animated: false)
+        pv.selectRow(5, inComponent: 0, animated: false)
         let rotationAngle: CGFloat = -.pi / 2        
         pv.transform = CGAffineTransform(rotationAngle: rotationAngle)
         return pv
@@ -161,6 +161,7 @@ class CreateTrainingController: UIViewController {
     
     private func createTraining() {
         
+        
         guard let name = nameTextField.text else { return }
         
         if name.isEmpty {
@@ -179,6 +180,12 @@ class CreateTrainingController: UIViewController {
         training.setValue(startDatePicker.date, forKey: "startDate")
         training.setValue(endDatePicker.date, forKey: "endDate")
         
+        //
+        training.setValue(notationPicker.selectedData, forKey: "notation")
+        training.setValue(tirednessNotationPicker.selectedData, forKey: "tirednessNotation")
+        training.setValue(notesTextView.text, forKey: "notes")
+        
+        
         do {
             try context.save()
             dismiss(animated: true, completion: {
@@ -194,6 +201,10 @@ class CreateTrainingController: UIViewController {
         training?.name = nameTextField.text
         training?.startDate = startDatePicker.date
         training?.endDate = endDatePicker.date
+        training?.notation = notationPicker.selectedData
+        training?.tirednessNotation = tirednessNotationPicker.selectedData
+        training?.notes = notesTextView.text
+        
         
         do {
             try context.save()
@@ -209,10 +220,17 @@ class CreateTrainingController: UIViewController {
         guard let name = training?.name else { return }
         guard let startDate = training?.startDate else { return }
         guard let endDate = training?.endDate else { return }
+        guard let notation = training?.notation else { return }
+        guard let tirednessNotation = training?.tirednessNotation else { return }
+        guard let notes = training?.notes else { return }
+        
         
         nameTextField.text = name
         startDatePicker.date = startDate
         endDatePicker.date = endDate
+        notationPicker.selectRow(Int(notation), inComponent: 0, animated: false)
+        tirednessNotationPicker.selectRow(Int(tirednessNotation), inComponent: 0, animated: false)
+        notesTextView.text = notes
     }
     
 }
