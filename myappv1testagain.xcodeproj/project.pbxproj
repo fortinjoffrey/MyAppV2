@@ -21,6 +21,8 @@
 		DD44D62F208F3DDE002A73ED /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D62B208F3DDE002A73ED /* SelectionCell.swift */; };
 		DD44D630208F3DDE002A73ED /* SelectedTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D62C208F3DDE002A73ED /* SelectedTimer.swift */; };
 		DD44D631208F3DDE002A73ED /* SelectionController+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D62D208F3DDE002A73ED /* SelectionController+Collection.swift */; };
+		DD44D633208F433A002A73ED /* CreateTrainingController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D632208F433A002A73ED /* CreateTrainingController+Keyboard.swift */; };
+		DD44D635208F43EE002A73ED /* NotationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D634208F43EE002A73ED /* NotationPickerView.swift */; };
 		DD5F593F206E367500EBF477 /* ResumeTrainingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F593E206E367500EBF477 /* ResumeTrainingController.swift */; };
 		DD5F5941206E398000EBF477 /* ResumeTrainingController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F5940206E398000EBF477 /* ResumeTrainingController+UITableView.swift */; };
 		DD63DFA22084993000FA83E4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD63DFA12084993000FA83E4 /* MainTabBarController.swift */; };
@@ -36,7 +38,6 @@
 		DDA4BAAD20601D900003E835 /* CreateExerciceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA4BAAC20601D900003E835 /* CreateExerciceController.swift */; };
 		DDB347F8205E84A400C436C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB347F7205E84A400C436C1 /* AppDelegate.swift */; };
 		DDB347FA205E84A400C436C1 /* TrainingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB347F9205E84A400C436C1 /* TrainingsController.swift */; };
-		DDB347FD205E84A400C436C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB347FB205E84A400C436C1 /* Main.storyboard */; };
 		DDB347FF205E84A400C436C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB347FE205E84A400C436C1 /* Assets.xcassets */; };
 		DDB34802205E84A400C436C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB34800205E84A400C436C1 /* LaunchScreen.storyboard */; };
 		DDC322FA2063EE5400BE3204 /* ExerciceDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC322F92063EE5400BE3204 /* ExerciceDefault.swift */; };
@@ -65,6 +66,8 @@
 		DD44D62B208F3DDE002A73ED /* SelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
 		DD44D62C208F3DDE002A73ED /* SelectedTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTimer.swift; sourceTree = "<group>"; };
 		DD44D62D208F3DDE002A73ED /* SelectionController+Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectionController+Collection.swift"; sourceTree = "<group>"; };
+		DD44D632208F433A002A73ED /* CreateTrainingController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateTrainingController+Keyboard.swift"; sourceTree = "<group>"; };
+		DD44D634208F43EE002A73ED /* NotationPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotationPickerView.swift; sourceTree = "<group>"; };
 		DD5F593E206E367500EBF477 /* ResumeTrainingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeTrainingController.swift; sourceTree = "<group>"; };
 		DD5F5940206E398000EBF477 /* ResumeTrainingController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResumeTrainingController+UITableView.swift"; sourceTree = "<group>"; };
 		DD63DFA12084993000FA83E4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -81,7 +84,6 @@
 		DDB347F4205E84A400C436C1 /* myappv1testagain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myappv1testagain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB347F7205E84A400C436C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB347F9205E84A400C436C1 /* TrainingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingsController.swift; sourceTree = "<group>"; };
-		DDB347FC205E84A400C436C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDB347FE205E84A400C436C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDB34801205E84A400C436C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDB34803205E84A400C436C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				DDA4BAA4206017B50003E835 /* UIViewController+Helpers.swift */,
 				DDC322FB2063F7AD00BE3204 /* UITableView+Helpers.swift */,
 				DD194A8020809AB1008B54F8 /* UIView+.swift */,
+				DD44D634208F43EE002A73ED /* NotationPickerView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			children = (
 				DD2541BC205EC38F00A14FF4 /* CreateTrainingController.swift */,
 				DD2541BE205EC45400A14FF4 /* CreateTrainingController+UI.swift */,
+				DD44D632208F433A002A73ED /* CreateTrainingController+Keyboard.swift */,
 			);
 			path = CreateTraining;
 			sourceTree = "<group>";
@@ -242,7 +246,6 @@
 				DD2541A9205EC01800A14FF4 /* Trainings */,
 				DDA4BAA1206014090003E835 /* Exercices */,
 				DDD2DB94206569E20078583B /* Sets */,
-				DDB347FB205E84A400C436C1 /* Main.storyboard */,
 				DDB347FE205E84A400C436C1 /* Assets.xcassets */,
 				DDB34800205E84A400C436C1 /* LaunchScreen.storyboard */,
 				DDB34803205E84A400C436C1 /* Info.plist */,
@@ -353,7 +356,6 @@
 			files = (
 				DDB34802205E84A400C436C1 /* LaunchScreen.storyboard in Resources */,
 				DDB347FF205E84A400C436C1 /* Assets.xcassets in Resources */,
-				DDB347FD205E84A400C436C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +380,9 @@
 				DDC322FC2063F7AD00BE3204 /* UITableView+Helpers.swift in Sources */,
 				DD44D630208F3DDE002A73ED /* SelectedTimer.swift in Sources */,
 				DDD2DB9720656A2A0078583B /* SetsController.swift in Sources */,
+				DD44D633208F433A002A73ED /* CreateTrainingController+Keyboard.swift in Sources */,
 				DD7F58992063DFDE00E44315 /* ChooseExercicesController.swift in Sources */,
+				DD44D635208F43EE002A73ED /* NotationPickerView.swift in Sources */,
 				DD2541AE205EC06D00A14FF4 /* UIColor+theme.swift in Sources */,
 				DDB347FA205E84A400C436C1 /* TrainingsController.swift in Sources */,
 				DDA4BAA3206014290003E835 /* ExercicesController.swift in Sources */,
@@ -408,14 +412,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DDB347FB205E84A400C436C1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DDB347FC205E84A400C436C1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DDB34800205E84A400C436C1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
