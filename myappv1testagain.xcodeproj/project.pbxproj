@@ -17,16 +17,16 @@
 		DD2541BA205EC2FC00A14FF4 /* TrainingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541B9205EC2FC00A14FF4 /* TrainingCell.swift */; };
 		DD2541BD205EC38F00A14FF4 /* CreateTrainingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541BC205EC38F00A14FF4 /* CreateTrainingController.swift */; };
 		DD2541BF205EC45400A14FF4 /* CreateTrainingController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2541BE205EC45400A14FF4 /* CreateTrainingController+UI.swift */; };
+		DD44D62E208F3DDE002A73ED /* SelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D62A208F3DDE002A73ED /* SelectionController.swift */; };
+		DD44D62F208F3DDE002A73ED /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D62B208F3DDE002A73ED /* SelectionCell.swift */; };
+		DD44D630208F3DDE002A73ED /* SelectedTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D62C208F3DDE002A73ED /* SelectedTimer.swift */; };
+		DD44D631208F3DDE002A73ED /* SelectionController+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D62D208F3DDE002A73ED /* SelectionController+Collection.swift */; };
 		DD5F593F206E367500EBF477 /* ResumeTrainingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F593E206E367500EBF477 /* ResumeTrainingController.swift */; };
 		DD5F5941206E398000EBF477 /* ResumeTrainingController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F5940206E398000EBF477 /* ResumeTrainingController+UITableView.swift */; };
 		DD63DFA22084993000FA83E4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD63DFA12084993000FA83E4 /* MainTabBarController.swift */; };
 		DD6A635120878E8100C30F07 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6A635020878E8100C30F07 /* TimerController.swift */; };
 		DD6A635320878E8E00C30F07 /* TimerController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6A635220878E8E00C30F07 /* TimerController+UI.swift */; };
 		DD6A635520878E9600C30F07 /* TimerController+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6A635420878E9600C30F07 /* TimerController+Background.swift */; };
-		DD6A635B20878EA200C30F07 /* SelectionController+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6A635720878EA200C30F07 /* SelectionController+Collection.swift */; };
-		DD6A635C20878EA200C30F07 /* SelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6A635820878EA200C30F07 /* SelectionController.swift */; };
-		DD6A635D20878EA200C30F07 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6A635920878EA200C30F07 /* SelectionCell.swift */; };
-		DD6A635E20878EA200C30F07 /* SelectedTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6A635A20878EA200C30F07 /* SelectedTimer.swift */; };
 		DD7F58992063DFDE00E44315 /* ChooseExercicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7F58982063DFDE00E44315 /* ChooseExercicesController.swift */; };
 		DD7F589C2063E87F00E44315 /* ChooseExercicesController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7F589B2063E87F00E44315 /* ChooseExercicesController+UITableView.swift */; };
 		DD7F589E2063EA4300E44315 /* ChooseExercicesController+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7F589D2063EA4300E44315 /* ChooseExercicesController+UISearchBar.swift */; };
@@ -61,16 +61,16 @@
 		DD2541B9205EC2FC00A14FF4 /* TrainingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCell.swift; sourceTree = "<group>"; };
 		DD2541BC205EC38F00A14FF4 /* CreateTrainingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTrainingController.swift; sourceTree = "<group>"; };
 		DD2541BE205EC45400A14FF4 /* CreateTrainingController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateTrainingController+UI.swift"; sourceTree = "<group>"; };
+		DD44D62A208F3DDE002A73ED /* SelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionController.swift; sourceTree = "<group>"; };
+		DD44D62B208F3DDE002A73ED /* SelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
+		DD44D62C208F3DDE002A73ED /* SelectedTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTimer.swift; sourceTree = "<group>"; };
+		DD44D62D208F3DDE002A73ED /* SelectionController+Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectionController+Collection.swift"; sourceTree = "<group>"; };
 		DD5F593E206E367500EBF477 /* ResumeTrainingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeTrainingController.swift; sourceTree = "<group>"; };
 		DD5F5940206E398000EBF477 /* ResumeTrainingController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResumeTrainingController+UITableView.swift"; sourceTree = "<group>"; };
 		DD63DFA12084993000FA83E4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DD6A635020878E8100C30F07 /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		DD6A635220878E8E00C30F07 /* TimerController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimerController+UI.swift"; sourceTree = "<group>"; };
 		DD6A635420878E9600C30F07 /* TimerController+Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimerController+Background.swift"; sourceTree = "<group>"; };
-		DD6A635720878EA200C30F07 /* SelectionController+Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectionController+Collection.swift"; sourceTree = "<group>"; };
-		DD6A635820878EA200C30F07 /* SelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionController.swift; sourceTree = "<group>"; };
-		DD6A635920878EA200C30F07 /* SelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
-		DD6A635A20878EA200C30F07 /* SelectedTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTimer.swift; sourceTree = "<group>"; };
 		DD7F58982063DFDE00E44315 /* ChooseExercicesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExercicesController.swift; sourceTree = "<group>"; };
 		DD7F589B2063E87F00E44315 /* ChooseExercicesController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseExercicesController+UITableView.swift"; sourceTree = "<group>"; };
 		DD7F589D2063EA4300E44315 /* ChooseExercicesController+UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseExercicesController+UISearchBar.swift"; sourceTree = "<group>"; };
@@ -138,6 +138,17 @@
 			path = CreateTraining;
 			sourceTree = "<group>";
 		};
+		DD44D629208F3DCE002A73ED /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				DD44D62C208F3DDE002A73ED /* SelectedTimer.swift */,
+				DD44D62B208F3DDE002A73ED /* SelectionCell.swift */,
+				DD44D62A208F3DDE002A73ED /* SelectionController.swift */,
+				DD44D62D208F3DDE002A73ED /* SelectionController+Collection.swift */,
+			);
+			path = Selection;
+			sourceTree = "<group>";
+		};
 		DD5F593D206E364200EBF477 /* ResumeTraining */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,10 +169,10 @@
 		DD63DFA320849CC800FA83E4 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				DD44D629208F3DCE002A73ED /* Selection */,
 				DD6A635020878E8100C30F07 /* TimerController.swift */,
 				DD6A635220878E8E00C30F07 /* TimerController+UI.swift */,
 				DD6A635420878E9600C30F07 /* TimerController+Background.swift */,
-				DD6A635620878EA200C30F07 /* Selection */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -171,18 +182,6 @@
 			children = (
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		DD6A635620878EA200C30F07 /* Selection */ = {
-			isa = PBXGroup;
-			children = (
-				DD6A635820878EA200C30F07 /* SelectionController.swift */,
-				DD6A635720878EA200C30F07 /* SelectionController+Collection.swift */,
-				DD6A635920878EA200C30F07 /* SelectionCell.swift */,
-				DD6A635A20878EA200C30F07 /* SelectedTimer.swift */,
-			);
-			name = Selection;
-			path = ../../../../../../../Desktop/testtimer/testtimer/Timer/Selection;
 			sourceTree = "<group>";
 		};
 		DD7F589A2063DFE800E44315 /* ChooseExercices */ = {
@@ -365,19 +364,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD6A635E20878EA200C30F07 /* SelectedTimer.swift in Sources */,
 				DDA4BAAD20601D900003E835 /* CreateExerciceController.swift in Sources */,
 				DD2541BD205EC38F00A14FF4 /* CreateTrainingController.swift in Sources */,
-				DD6A635C20878EA200C30F07 /* SelectionController.swift in Sources */,
 				DD2541BF205EC45400A14FF4 /* CreateTrainingController+UI.swift in Sources */,
 				DD2541AC205EC03E00A14FF4 /* CustomNavigationController.swift in Sources */,
 				DD5F5941206E398000EBF477 /* ResumeTrainingController+UITableView.swift in Sources */,
 				DD2541BA205EC2FC00A14FF4 /* TrainingCell.swift in Sources */,
+				DD44D631208F3DDE002A73ED /* SelectionController+Collection.swift in Sources */,
 				DDDD5ADA206127CA0080FC37 /* ExerciceCell.swift in Sources */,
 				DD7F589C2063E87F00E44315 /* ChooseExercicesController+UITableView.swift in Sources */,
 				DD024182205EC8C500398BEE /* TrainingController+CreateTrainingControllerDelegate.swift in Sources */,
 				DDC322FA2063EE5400BE3204 /* ExerciceDefault.swift in Sources */,
 				DDC322FC2063F7AD00BE3204 /* UITableView+Helpers.swift in Sources */,
+				DD44D630208F3DDE002A73ED /* SelectedTimer.swift in Sources */,
 				DDD2DB9720656A2A0078583B /* SetsController.swift in Sources */,
 				DD7F58992063DFDE00E44315 /* ChooseExercicesController.swift in Sources */,
 				DD2541AE205EC06D00A14FF4 /* UIColor+theme.swift in Sources */,
@@ -387,13 +386,13 @@
 				DDA4BAAB20601CF70003E835 /* CreateExerciceController+UI.swift in Sources */,
 				DDDD5AD8206114820080FC37 /* ExercicesController+CreateExerciceControllerDelegate.swift in Sources */,
 				DD7F589E2063EA4300E44315 /* ChooseExercicesController+UISearchBar.swift in Sources */,
+				DD44D62F208F3DDE002A73ED /* SelectionCell.swift in Sources */,
 				DD5F593F206E367500EBF477 /* ResumeTrainingController.swift in Sources */,
-				DD6A635D20878EA200C30F07 /* SelectionCell.swift in Sources */,
 				DDD2DB9920656E270078583B /* SetsController+UI.swift in Sources */,
+				DD44D62E208F3DDE002A73ED /* SelectionController.swift in Sources */,
 				DD6A635120878E8100C30F07 /* TimerController.swift in Sources */,
 				DD2541B0205EC0B500A14FF4 /* TrainingsController+UITableView.swift in Sources */,
 				DD6A635320878E8E00C30F07 /* TimerController+UI.swift in Sources */,
-				DD6A635B20878EA200C30F07 /* SelectionController+Collection.swift in Sources */,
 				DDDD5AD4206111CF0080FC37 /* ExercicesController+UITableView.swift in Sources */,
 				DDB347F8205E84A400C436C1 /* AppDelegate.swift in Sources */,
 				DD194A8120809AB1008B54F8 /* UIView+.swift in Sources */,
